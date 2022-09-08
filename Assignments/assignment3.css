@@ -1,0 +1,49 @@
+.infobox {
+    border: 1px solid #a2a9b1;
+    border-spacing: 3px;
+    background-color: #f8f9fa;
+    color: black;
+    margin: 0.5em 0 0.5em 1em;
+    padding: 0.2em;
+    float: right;
+    clear: right;
+    font-size: 88%;
+    line-height: 1.5em;
+    width: 22em;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    display: block;
+    position: relative;
+    font-size:0.875em;
+    line-height: 1.6;
+    padding: 1em;
+    z-index: 0;
+    width:1400px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.picture_left {
+    width: auto;
+    background-color: transparent;
+    margin: 0.5em 1.4em 1.3em 0;
+    float: left;
+    clear: left;
+}
+
+.picture_right {
+    width: auto;
+    background-color: transparent;
+    margin: 0.5em 0 1.3em 1.4em;
+    clear: right;
+    float: right;
+}
