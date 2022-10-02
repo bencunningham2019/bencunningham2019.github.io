@@ -68,7 +68,7 @@ nav li a:hover {
     color: #EDE4D3
 }
 
-@media only screen and (max-width: 1100px) {
+@media (max-width: 1100px) {
     body {
         background-image: url("../img/paris.jpg");
     }
@@ -79,7 +79,7 @@ nav li a:hover {
 
     li, a, h1 {
         color: black;
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .name a:hover {
@@ -91,7 +91,19 @@ nav li a:hover {
     }
 }
 
- @media only screen and (max-width: 580px) {
+@media (max-width: 950px) {
+    li, a, h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    li, a, h1 {
+        font-size: 25px;
+    }
+}
+
+ @media (max-width: 580px) {
     header {
         display: inline-block;
         text-align: center;
