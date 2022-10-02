@@ -24,9 +24,31 @@ header {
     align-items: center;
     padding: 30px 5% 30px 10%;
     background-color: #536766;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
 }
+
+/* img {
+    display: block;
+    max-width: 100%;
+} */
+
+body {
+    background-image: url("../img/dylan_surf.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+/* 
+@media only screen and (max-width: 1026px) {
+    .desktop {
+        display: none; 
+    }
+} */
+
+
 
 nav li {
     display: inline-block;
@@ -46,20 +68,43 @@ nav li a:hover {
     color: #EDE4D3
 }
 
+@media only screen and (max-width: 1100px) {
+    body {
+        background-image: url("../img/paris.jpg");
+    }
 
+    header {
+        background-color: #EDE4D3;
+    }
 
-/* .name {
-    float: left;
+    li, a, h1 {
+        color: black;
+        font-size: 25px;
+    }
+
+    .name a:hover {
+        color: #A3B1BC;
+    }
+    
+    nav li a:hover {
+        color: #A3B1BC;
+    }
 }
 
-.photo {
-    float: right;
-}
+ @media only screen and (max-width: 580px) {
+    header {
+        display: inline-block;
+        text-align: center;
+    }
+    li, a, nav {
+        padding: none;
+        text-align: center;
+        display: inline-block;
+    }
+    h1 {
+        text-align: center;
+        display: inline-block;
+    }
 
-.about {
-    float: right;
-}
+} 
 
-.other {
-    float: right;
-} */
