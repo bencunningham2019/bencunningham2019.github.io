@@ -15,11 +15,15 @@ li, a, .name {
     text-align: center;
     color: white;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     text-decoration: none;
 }
 
 header {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     padding: 30px 5% 30px 10%;
@@ -36,7 +40,7 @@ header {
     background-position: center bottom;
 }
 
-nav li {
+li {
     display: inline-block;
     padding: 0px 20px;
 }
@@ -95,19 +99,25 @@ nav li a:hover {
         display: inline-block;
         text-align: center;
     }
-    li, a, nav {
-        text-align: center;
+
+    li, a, .name {
         display: inline-block;
+        text-align: center;
     }
-    .name {
-        text-align: center;
+
+    nav li {
         display: inline-block;
+        text-align: center;
+    }
+
+    nav > ul, .name {
+        margin-right: 6%;
     }
 
 } 
 
 
-/* ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------
 /* Photos CSS */
 
 @media (min-width: 1101px){
@@ -121,7 +131,7 @@ nav li a:hover {
     background-color: #EDE4D3;
 }
 
-#photo {
+.photo {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -130,16 +140,16 @@ nav li a:hover {
 
 .li_photo {
     height: 40vh;
+    flex-grow: 1;
     cursor: pointer;
     position: relative;
-    list-style: none;
-    flex-grow: 1;
+    list-style: none;  
 }
 
-#photo .one {
-    object-fit: cover;
+.photo .one {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     vertical-align: bottom;
 }
 
@@ -147,7 +157,7 @@ nav li a:hover {
     flex-grow: 5;
 } */
 
- @media (max-aspect-ratio: 1/1) {
+  @media (max-aspect-ratio: 1/1) {
     .li_photo {
         height: 30vh;
     }
@@ -178,7 +188,7 @@ nav li a:hover {
 }
 
 @media (max-aspect-ratio: 1/1) and (max-width: 600px) {
-    #photo {
+    .photo {
         flex-direction: row;
       }
     
@@ -187,17 +197,17 @@ nav li a:hover {
         width: 100%;
       }
     
-    #photo .one{
+    .photo > .one{
         width: 100%;
         max-height: 75vh;
         min-width: 0;
       }
-}
+} 
 
 /* ----------------------------------------- */
 /* About */
 
-.body_about {
+ .body_about {
     background-color: #EDE4D3;
 }
 
@@ -216,7 +226,7 @@ nav li a:hover {
     font-family: 'Space Mono', monospace;
 }
 
-.contact > ul {
+.aligner {
     display: flex;
     align-items: stretch;
     justify-content: space-evenly;
@@ -225,11 +235,6 @@ nav li a:hover {
     padding-right: 25%;
     padding-left: 25%;
     padding-bottom: 1%;
-}
-
-.content > li {
-    display: flex;
-    list-style-type: none;
 }
 
 .mail {
@@ -333,9 +338,6 @@ nav li a:hover {
     
     .spotify {
         height: 40px;
-    }
-    .contact > ul {
-        display: flex;
     }
 }
 
@@ -539,4 +541,4 @@ hr {
     .artist_page nav li .header_link:hover {
         color: #EDE4D3;
     }
-}
+}  
