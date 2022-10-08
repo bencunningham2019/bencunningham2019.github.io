@@ -113,8 +113,13 @@ nav li a:hover {
     nav > ul, .name {
         margin-right: 6%;
     }
-
 } 
+
+@media (max-width: 440px) {
+    li, a, .name {
+        font-size: 22px;
+    }
+}
 
 
 /* ----------------------------------------------------------------
@@ -209,6 +214,7 @@ nav li a:hover {
 
  .body_about {
     background-color: #EDE4D3;
+    font-family: 'Space Mono', monospace;
 }
 
 .profile {
@@ -218,12 +224,9 @@ nav li a:hover {
     object-fit: cover;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
     margin-top: 2%;
     margin-bottom: 2%;
-}
-.about_page {
-    font-family: 'Space Mono', monospace;
+    border-radius: 50%;
 }
 
 .aligner {
@@ -234,7 +237,6 @@ nav li a:hover {
     margin: 0;
     padding-right: 25%;
     padding-left: 25%;
-    padding-bottom: 1%;
 }
 
 .mail {
@@ -280,7 +282,7 @@ nav li a:hover {
 @media (max-width: 950px) {
     .profile {
         max-height: 350px;
-        width: 400px;
+        width: 350px;
     }
     .grid_about {
         font-size: 18px;
@@ -299,7 +301,7 @@ nav li a:hover {
 }
 @media (max-width: 750px) {
     .profile {
-        max-height: 250px;
+        max-height: 300px;
         width: 300px;
     }
     .grid_about {
@@ -316,12 +318,16 @@ nav li a:hover {
     .spotify {
         height: 50px;
     }
+    .aligner {
+        padding-bottom: 2%
+    }
+    
 }
 
 @media (max-width: 600px) {
     .profile {
         max-height: 200px;
-        width: 250px;
+        width: 200px;
     }
 
     .grid_about {
@@ -338,6 +344,15 @@ nav li a:hover {
     
     .spotify {
         height: 40px;
+    }
+    .aligner {
+        padding-bottom: 3%
+    }
+}
+
+@media (max-width: 440px) {
+    li, a, .name {
+        font-size: 21px;
     }
 }
 
@@ -358,6 +373,10 @@ nav li a:hover {
         color: #EDE4D3;
     }
 }
+
+
+
+
 
 /* ------------------------------------------------------ */
 /* Other Page */
@@ -462,83 +481,143 @@ hr {
 }
 
 @media (max-width: 1100px) {
-    #artist_img {
+    .massey_img {
         height: 350px;
         width: 350px;
     }
-    #artist_name {
+    .massey_name {
         font-size: 45pt;
     }
-    #artist_link {
+    .massey_link {
         font-size: 16pt;
     }
-    #artist_text {
+    .massey_text {
+        font-size: 18pt;
+    }
+    .josh_img {
+        height: 350px;
+        width: 350px;
+    }
+    .josh_name {
+        font-size: 45pt;
+    }
+    .josh_link {
+        font-size: 16pt;
+    }
+    .josh_text {
         font-size: 18pt;
     }
 }
 
 @media (max-width: 950px) {
-    #artist_img {
+    .massey_img {
         height: 300px;
         width: 300px;
     }
-    #artist_name {
+    .massey_name {
         font-size: 40pt;
     }
-    #artist_link {
+    .massey_link {
         font-size: 14pt;
     }
-    #artist_text {
+    .massey_text {
+        font-size: 16pt;
+    }
+    .josh_img {
+        height: 300px;
+        width: 300px;
+    }
+    .josh_name {
+        font-size: 40pt;
+    }
+    .josh_link {
+        font-size: 14pt;
+    }
+    .josh_text {
         font-size: 16pt;
     }
 }
 
 @media (max-width: 750px) {
-    #artist_img {
+    .massey_img {
         height: 250px;
         width: 250px;
     }
-    #artist_name {
+    .massey_name {
         font-size: 35pt;
     }
-    #artist_link {
+    .massey_link {
         font-size: 12pt;
     }
-    #artist_text {
+    .massey_text {
+        font-size: 14pt;
+    }
+    .josh_img {
+        height: 250px;
+        width: 250px;
+    }
+    .josh_name {
+        font-size: 35pt;
+    }
+    .josh_link {
+        font-size: 12pt;
+    }
+    .josh_text {
         font-size: 14pt;
     }
 }
 
  @media (max-width: 600px) {
-    #artist_img {
+    .artist_img {
         height: 225px;
         width: 225px;
     }
-    #artist_name {
+    .massey_name {
         font-size: 30pt;
     }
-    #artist_link {
+    .massey_link {
         font-size: 12pt;
     }
-    #artist_text {
+    .massey_text {
+        font-size: 14pt;
+    }
+    .josh_img {
+        height: 225px;
+        width: 225px;
+    }
+    .josh_name {
+        font-size: 30pt;
+    }
+    .josh_link {
+        font-size: 12pt;
+    }
+    .josh_text {
         font-size: 14pt;
     }
 }
+
+
 
 @media (min-width: 1px) {
     .artist_page header {
         background-color: #536766;
     }
 
-    .artist_page .header_link {
+    .artist_page .a_artist {
         color: white;
     }
 
-    .artist_page .name .header_link:hover {
+    .artist_h1 {
+        color: white;
+    }
+    
+    .artist_page .name .a_artist:hover {
         color: #EDE4D3;
     }
     
-    .artist_page nav li .header_link:hover {
+    .artist_page nav li .a_artist:hover {
         color: #EDE4D3;
     }
 }  
+
+
