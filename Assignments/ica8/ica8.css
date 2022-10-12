@@ -1,0 +1,18 @@
+body {
+    background-color: orange;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cornflowerblue;
+    display: inline-block;
+    text-align: center;
+    padding: 3px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
