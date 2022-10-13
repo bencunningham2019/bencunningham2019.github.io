@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+    font-family: 'Fjalla One', sans-serif;
+    background-color: #EDE4D3;
+}
+
+/* body {
+    font-family: 'Space Mono', monospace;
+} */
+
+#us, #uk {
+    margin-top: 10px;
+}
+.randomize {
+    font-family: 'Space Mono', monospace;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
