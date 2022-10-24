@@ -14,7 +14,7 @@ const altText = ['Massey on beach', 'Dylan on a wave', 'Couple in Paris', 'Masse
 
 for (i=0; i<filenames.length; i++) {
     let xxx = 'img/' + filenames[i];
-    let yyy = altText[i]
+    let yyy = altText[i];
 
     const newImage = document.createElement('img');
     newImage.setAttribute('src', xxx);
