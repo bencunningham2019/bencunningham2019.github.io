@@ -12,7 +12,7 @@ html {
   
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #c9bd95;
+    background-color: #71816D;
   }
   
   .app {
@@ -40,7 +40,12 @@ html {
   }
   
   .quote-text {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    font-size: 25px;
+    color: black;
+  }
+
+  .delivery-text {
     font-size: 25px;
     color: black;
   }
@@ -52,7 +57,7 @@ html {
   
   .button {
     display: block;
-    color: white;
+    color: black;
     border-radius: 4px;
     border: none;
     padding: 10px 20px;
@@ -73,12 +78,12 @@ html {
   }
   
   .new-quote {
-    background-color: #4A2B0F;
+    background-color: #F1E0C5;
     margin-bottom: 15px;
   }
   
   .new-quote:hover {
-    background-color: #6d3b0e;
+    background-color: #dfcdb8;
   }
   
   .new-quote:disabled {
