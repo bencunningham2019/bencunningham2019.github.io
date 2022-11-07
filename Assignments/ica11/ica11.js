@@ -8,7 +8,7 @@ deliveryButton.addEventListener('click', getDelivery);
 
 let joke = 'https://v2.jokeapi.dev/joke/Any?safe-mode'
 
-i
+
 async function getQuote() {
     //console.log('test click worked');
     let text = await fetch(joke)
