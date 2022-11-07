@@ -1,5 +1,4 @@
 
-
 const quoteButton = document.querySelector('.new-quote');
 quoteButton.addEventListener('click', getQuote);
 
@@ -55,28 +54,3 @@ function displayDelivery(x) {
 
 getQuote();
 
-// const jokeButton = document.querySelector('.new-joke');
-// jokeButton.addEventListener('click', getJoke);
-
-// let joke = 'https://v2.jokeapi.dev/joke/Any';
-
-// async function getJoke() { 
-//     let response = await fetch(joke);
-//     let data = await response.text();
-
-//     let json_response =JSON.parse(data);
-//     console.log(json_response['setup'])
-
-//     displayJoke(json_response['message'])
-// };
-
-// // getJoke().then(data => console.log(data));
- 
-// function displayJoke(x) {
-//     const jokeBox = document.querySelector('#js-joke-text');
-//     // console.log('display quote working');
-//     let textMessage = document.createTextNode(x);
-
-//     // quoteBox.appendChild(textMesssage);
-//     document.getElementById('js-joke-text').textContent = x;
-// }
