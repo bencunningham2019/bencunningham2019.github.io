@@ -1,0 +1,52 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.output {
+    font-size: 40px;
+    background-color: lightgray;
+    width: 300px;
+}
+
+.number-wheel {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    border: solid black;
+    position: absolute;
+    margin: 20px;
+}
+
+#selector {
+    height: 120px;
+    width: 3px;
+    background-color: blue;
+    left: 149px;
+    bottom: 149px;
+    /* animation: rotation 2s infinite linear; */
+    transform-origin: 0% 100%; 
+    position: absolute;
+}
+
+/* @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  } */
+
+#number-circle {
+    position: absolute;
+    height: 300px;
+    width: 285px;
+    left: 7px;
+    top: 2.5px;
+}
+
+
+
