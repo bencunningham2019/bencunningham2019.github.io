@@ -8,16 +8,28 @@
     <title>Other Artists</title>
 </head>
 <body class="artist_body">
-    <header class="header_link">
-        <h1 class="name"> <a href="index.html" class="artist_h1">BEN CUNNINGHAM</a></h1>
-        <nav>
-            <ul>
-                <li> <a href="photos.html" class="a_artist">PHOTOS</a></li>
-                <li> <a href="about.html" class="a_artist">ABOUT</a></li>
-                <li> <a href="other.html" class="a_artist">ARTISTS</a></li>
-            </ul>
-        </nav>
-    </header>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <li><a href="index.html">Ben Cunningham</a></li>
+        </div>
+        <ul class="nav-links">
+        
+        <!-- USING CHECKBOX HACK -->
+        <div class="menu">
+            <li><a href="photos.html">Photos</a></li>
+            <li class="services">
+            <a href="#">Other</a>   
+                <ul class="dropdown">
+                    <li><a href="other.html">Artists</a></li>
+                    <li><a href="/">Photo Map</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </div>
+        </ul>
+    </nav>
 
     <main>
         <article class="artist_article">

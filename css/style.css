@@ -1,61 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 * {
-    box-sizing: border-box;
-    margin: 0;
+    margin: 0; 
     padding: 0;
-}
-
-li, a, .name {
-    font-family: 'Fjalla One', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    text-decoration: none;
-}
-
-header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 5% 30px 10%;
-    background-color: #536766;
-    position: sticky;
-    top: 0;
-    width: 100%;
+    box-sizing: border-box;
 }
 
 .body_index {
-    background-image: url("../img/index/dylan_surf.jpg");
+    font-family: 'Fjalla One', sans-serif;
     width: 100%;
     background-size: cover;
     background-position: center bottom;
+    background-image: url("../img/index/dylan_surf.jpg");
 }
 
+a {
+    text-decoration: none;
+}
+    
 li {
-    display: inline-block;
-    padding: 0px 20px;
+    list-style: none;
 }
 
-.name, a {
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #536766;
+    color: #fff;
+}
+    
+.nav-links a {
+    color: #fff;
+    }
+
+    /* LOGO */
+    
+.logo {
+    font-size: 32px;
+    padding-left: 20px;
+}
+
+.logo a {
+    color: white;
+}
+
+.logo a:hover {
+    color: #EDE4D3;
     transition: all 0.3s ease 0s;
-    margin-right: auto;
+}
+    
+    /* NAVBAR MENU */
+    
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 32px;
+    padding-right: 30px;
+}
+    
+.menu li:hover {
+    transition: all 0.3s ease 0s;
 }
 
-.name a:hover {
+.menu a:hover {
     color: #EDE4D3
 }
-
-nav li a:hover {
-    color: #EDE4D3
+    
+.menu li {
+    padding: 5px 14px;
+}
+    
+    /* DROPDOWN MENU */
+    
+.services {
+    position: relative;
+}
+    
+.dropdown {
+    background-color: #536766;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    overflow:hidden;
+    top: 50px;
+    /* right: 1px; */
+}
+    
+.dropdown li + li {
+    margin-top: 10px;
+}
+    
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+    
+.dropdown li:hover {
+    color: #EDE4D3;
+}
+    
+.services:hover .dropdown {
+    display: block;
 }
 
 @media (max-width: 1100px) {
@@ -63,62 +111,40 @@ nav li a:hover {
         background-image: url("../img/index/paris.jpg");
     }
 
-    header {
-        background-color: #EDE4D3;
-        position: relative;
-    }
-
-    li, a, .name {
-        color: black;
-        font-size: 35px;
-    }
-
-    .name a:hover {
-        color: #A3B1BC;
-    }
-    
-    nav li a:hover {
-        color: #A3B1BC;
-    }
 }
 
 @media (max-width: 950px) {
-    li, a, .name {
-        font-size: 30px;
+    .menu {
+        font-size: 28px;
+    }
+    .logo {
+        font-size: 28px;
     }
 }
 
 @media (max-width: 750px) {
-    li, a, .name {
-        font-size: 25px;
+    .menu {
+        font-size: 22px;
+    }
+    .logo {
+        font-size: 22px;
     }
 }
 
- @media (max-width: 600px) {
-    header {
-        display: inline-block;
-        text-align: center;
+@media (max-width: 600px) {
+    .navbar{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .logo {
+        padding-left: 0px;
     }
 
-    li, a, .name {
-        display: inline-block;
-        text-align: center;
+    .menu {
+        padding-right: 0px;
     }
-
-    nav li {
-        display: inline-block;
-        text-align: center;
-    }
-
-    nav > ul, .name {
-        margin-right: 6%;
-    }
-} 
-
-@media (max-width: 440px) {
-    li, a, .name {
-        font-size: 22px;
-    }
+    
 }
 
 
@@ -364,6 +390,10 @@ nav li a:hover {
  .body_about {
     background-color: #EDE4D3;
     font-family: 'Space Mono', monospace;
+}
+
+.menu, .logo {
+    font-family: "Fjalla One"
 }
 
 .profile {
@@ -771,3 +801,39 @@ hr {
 }  
 
 
+/* ------------------------------------------------------------------------------ */
+/* CV Page */
+
+.body_cv {
+    align-items: center;
+    background-color: #EDE4D3;
+}
+.pdf {
+    width: 1000px;
+    height: 1100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+@media (max-width: 950px) {
+    .pdf{
+        width: 800px;
+        height: 900px;
+    }
+}
+
+@media (max-width: 750px) {
+    .pdf{
+        width: 700px;
+        height: 800px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pdf{
+        width: 500px;
+        height: 600px;
+    }
+}

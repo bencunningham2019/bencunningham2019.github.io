@@ -7,17 +7,29 @@
     <link rel="stylesheet" href="css/style.css">
     <title>About</title>
 </head>
-<body class=body_about>
-    <header>
-        <h1 class="name"> <a href="index.html">BEN CUNNINGHAM</a></h1>
-        <nav>
-            <ul>
-                <li> <a href="photos.html" class="a_about">PHOTOS</a></li>
-                <li> <a href="about.html" class="a_about">ABOUT</a></li>
-                <li> <a href="other.html" class="a_about">ARTISTS</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="body_about">
+    
+    <nav class="navbar">
+        <div class="logo">
+            <li><a href="index.html">Ben Cunningham</a></li>
+        </div>
+        <ul class="nav-links">
+        
+        <!-- USING CHECKBOX HACK -->
+        <div class="menu">
+            <li><a href="photos.html">Photos</a></li>
+            <li class="services">
+            <a href="#">Other</a>    
+                <ul class="dropdown">
+                    <li><a href="other.html">Artists</a></li>
+                    <li><a href="/">Photo Map</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </div>
+        </ul>
+    </nav>
 
     <img src="img/about/color.jpeg" alt="Ben in the mountains" class="profile">
         <ul class="aligner">
