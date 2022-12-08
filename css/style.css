@@ -813,10 +813,15 @@ hr {
     background-color: #EDE4D3;
 }
 
+.photoMapHeader {
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    margin: 1rem auto;
+}
 #map {
     height: 800px;
     width: 1200px;
-    margin: 5rem auto;
+    margin: 1rem auto;
 }
 
 .popup .leaflet-pop-tip,
@@ -826,4 +831,5 @@ hr {
     color: white;
     text-align: center;
     margin: auto;
+    font-size: 20pt;
 }
