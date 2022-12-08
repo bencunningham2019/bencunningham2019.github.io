@@ -1,5 +1,3 @@
-const apiKey = 'AIzaSyAlkUsbp29IVB_9J9rRLpJiMUY0jfKfJ_Y'
-
 const map = L.map('map').setView([38.97087688800689, -53.99106807844726], 3);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
