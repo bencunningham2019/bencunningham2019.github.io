@@ -148,91 +148,6 @@ li {
 /* ----------------------------------------------------------------
 /* Photos CSS */
 
-/* @media (min-width: 1101px){
-    .photo_page header {
-        position: relative;
-    }
-} */
-
-/*
-.body_photos {
-    font-family: "Fjalla One", sans-serif;
-    background-color: #EDE4D3;
-}
-
-.photo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
-}
-
-.li_photo {
-    height: 40vh;
-    flex-grow: 1;
-    cursor: pointer;
-    position: relative;
-    list-style: none;  
-}
-
-.photo .one {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-}
-
-.last {
-    flex-grow: 5;
-}
-
-@media (max-aspect-ratio: 1/1) {
-    .li_photo {
-        height: 30vh;
-    }
-}
-
-@media (max-width: 1100px) {
-    .li_photo {
-        height: 45vh;
-    }
-}
-
-@media (max-width: 950px) {
-    .li_photo {
-        height: 50vh;
-    }
-}
-
-@media (max-width: 750px) {
-    .li_photo {
-        height: 55vh;
-    }
-}
-
- @media (max-width: 600px) {
-    .li_photo {
-        height: 60vh;
-    }
-}
-
-@media (max-aspect-ratio: 1/1) and (max-width: 600px) {
-    .photo {
-        flex-direction: row;
-      }
-    
-    .li_photo {
-        height: auto;
-        width: 100%;
-      }
-    
-    .photo > .one{
-        width: 100%;
-        max-height: 75vh;
-        min-width: 0;
-      }
-}  */
-
 .body_photos{
     margin-top:0px;
     padding: 0px;
@@ -786,6 +701,11 @@ hr {
     overflow: hidden;
 }
 
+.resumeLink {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 60;
+}
+
 @media (max-width: 950px) {
     .pdf{
         width: 800px;
@@ -806,6 +726,8 @@ hr {
         height: 600px;
     }
 }
+
+
 
 /* ------------------------------------------------------------------------------ */
 /* Photo Map Page */
