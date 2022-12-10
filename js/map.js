@@ -213,6 +213,105 @@ const masseyBeachPortugalOptions = {
 }
 
 L.marker([39.04133989377542, -9.415804535051178], {icon: masseyBeachPortugal}).bindPopup(masseyBeachPortugalPopup, masseyBeachPortugalOptions).addTo(map);
+
+//Norrebro People
+const NorroPeople = L.icon({
+    iconUrl: 'img/photos/copenhagen/copenhagen_5.jpg',
+    iconSize: [80, 70]
+});
+
+const NorroPeoplePopup = "Some people vibin' in Norrebro, Copenhagen<br/> <img src='img/photos/copenhagen/copenhagen_5.jpg' alt='Vibin' in Norrebro' width='600px'/>";
+const NorroPeopleOptions = {
+    'maxWidth': '600',
+    'className': 'popup'
+}
+
+L.marker([55.69951206053946, 12.541952779100939], {icon: NorroPeople}).bindPopup(NorroPeoplePopup, NorroPeopleOptions).addTo(map);
+
+//Basketball in Norrebro
+const basketballNorre = L.icon({
+    iconUrl: 'img/photos/copenhagen/norro_1.jpg',
+    iconSize: [100, 66.6666]
+});
+
+const basketballNorrePopup = "Playing basketball in Norrebro, Copenhagen<br/> <img src='img/photos/copenhagen/norro_1.jpg' alt='Basketball in Norrebro' width='700px'/>";
+const basketballNorreOptions = {
+    'maxWidth': '700',
+    'className': 'popup'
+}
+
+L.marker([55.70357359763137, 12.543754582130294], {icon: basketballNorre}).bindPopup(basketballNorrePopup, basketballNorreOptions).addTo(map);
+
+//Lisbon Bridge 
+const lisbonBridge = L.icon({
+    iconUrl: 'img/photos/portugal/port_8.jpg',
+    iconSize: [66.6666, 100]
+});
+
+const lisbonBridgePopup = "Some nice signs in Lisbon<br/> <img src='img/photos/portugal/port_8.jpg' alt='Some nice signs in Lisbon' width='400px'/>";
+const lisbonBridgeOptions = {
+    'maxWidth': '400',
+    'className': 'popup'
+}
+
+L.marker([38.710964371496935, -9.146866181574568], {icon: lisbonBridge}).bindPopup(lisbonBridgePopup, lisbonBridgeOptions).addTo(map);
+
+//Lighthouse Portugal
+const lighthousePortugal = L.icon({
+    iconUrl: 'img/photos/portugal/port_2.jpg',
+    iconSize: [66.6666, 100]
+});
+
+const lighthousePortugalPopup = "A lighthouse somewhere in Portugal<br/> <img src='img/photos/portugal/port_2.jpg' alt='A lighthouse somewhere in Portugal' width='400px'/>";
+const lighthousePortugalOptions = {
+    'maxWidth': '400',
+    'className': 'popup'
+}
+
+L.marker([39.36069663438127, -9.407490616444353], {icon: lighthousePortugal}).bindPopup(lighthousePortugalPopup, lighthousePortugalOptions).addTo(map);
+
+//Piano in Amsterdam
+const pianoAmsterdam = L.icon({
+    iconUrl: 'img/photos/amsterdam/amsterdam_2.jpg',
+    iconSize: [100, 66.6666]
+});
+
+const pianoAmsterdamPopup = "Playing piano in the streets of Amsterdam<br/> <img src='img/photos/amsterdam/amsterdam_2.jpg' alt='Man playing piano in the streets of Amsterdam' width='700px'/>";
+const pianoAmsterdamOptions = {
+    'maxWidth': '700',
+    'className': 'popup'
+}
+
+L.marker([52.37148576402526, 4.8904238561692335], {icon: pianoAmsterdam}).bindPopup(pianoAmsterdamPopup, pianoAmsterdamOptions).addTo(map);
+
+//Dylan Surfing 
+const tuscanyJack = L.icon({
+    iconUrl: 'img/photos/people/people_2.jpg',
+    iconSize: [66.6666, 100]
+});
+
+const tuscanyJackPopup = "Jack on the Super 8 in Tuscany<br/> <img src='img/photos/people/people_2.jpg' alt='Jack on the Super 8 in Tuscany' width='400px'/>";
+const tuscanyJackOptions = {
+    'maxWidth': '400',
+    'className': 'popup'
+}
+
+L.marker([43.50918960509681, 10.962040454271447], {icon: tuscanyJack}).bindPopup(tuscanyJackPopup, tuscanyJackOptions).addTo(map);
+
+//Massey in Paris
+const parisMassey = L.icon({
+    iconUrl: 'img/photos/paris/paris_1.jpg',
+    iconSize: [66.6666, 100]
+});
+
+const parisMasseyPopup = "Massey hates the camera<br/> <img src='img/photos/paris/paris_1.jpg' alt='Massey in Paris' width='400px'/>";
+const parisMasseyOptions = {
+    'maxWidth': '400',
+    'className': 'popup'
+}
+
+L.marker([48.878383372425425, 2.3428936813020775], {icon: parisMassey}).bindPopup(parisMasseyPopup, parisMasseyOptions).addTo(map);
+
 // L.imageOverlay('img/photos/skate/skate_1.jpg', [[37.377647, -124.317798], [29.641249, -110.158219]], {
 //     opacity: 0.8,
 //     interactive: true

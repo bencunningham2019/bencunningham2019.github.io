@@ -817,7 +817,9 @@ hr {
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
     margin: 1rem auto;
+    font-size: 35px;
 }
+
 #map {
     height: 800px;
     width: 1200px;
@@ -832,4 +834,54 @@ hr {
     text-align: center;
     margin: auto;
     font-size: 20pt;
+}
+
+@media (max-width: 1200px) {
+    #map{
+        width: 1000px;
+        height: 700px;
+    }
+    .photoMapHeader {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #map{
+        width: 800px;
+        height: 600px;
+    }
+    .photoMapHeader {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 800px) {
+    #map{
+        width: 650px;
+        height: 600px;
+    }
+    .photoMapHeader {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    #map{
+        width: 450px;
+        height: 600px;
+    }
+    .photoMapHeader {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    #map{
+        width: 350px;
+        height: 600px;
+    }
+    .photoMapHeader {
+        font-size: 18px;
+    }
 }
