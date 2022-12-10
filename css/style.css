@@ -693,8 +693,8 @@ hr {
     background-color: #EDE4D3;
 }
 .pdf {
-    width: 1000px;
-    height: 1100px;
+    /* width: 1000px;
+    height: 1100px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -706,7 +706,7 @@ hr {
     font-size: 60;
 }
 
-@media (max-width: 950px) {
+/* @media (max-width: 950px) {
     .pdf{
         width: 800px;
         height: 900px;
@@ -724,8 +724,10 @@ hr {
     .pdf{
         width: 500px;
         height: 600px;
+        width: 100%;
+        max-width: 100%;
     }
-}
+} */
 
 
 
