@@ -75,32 +75,32 @@ const alaskaJoshBoatOptions = {
 L.marker([55.601262381368, -133.5050119019379], {icon: alaskaJoshBoat}).bindPopup(alaskaJoshBoatPopup, alaskaJoshBoatOptions).addTo(map);
 
 //Brad Vibin'
-const bradPBR = L.icon({
-    iconUrl: 'img/photos/mojo/mojo_9.jpg',
+const bradBike = L.icon({
+    iconUrl: 'img/photos/mojo/mojo_12.jpg',
     iconSize: [66.6666, 100]
 });
 
-const bradPBRPopup = "Brad just vibin'<br/> <img src='img/photos/mojo/mojo_9.jpg' alt='Brad vibin' with PBR' width='400px'/>";
-const bradPBROptions = {
+const bradBikePopup = "Brad just vibin'<br/> <img src='img/photos/mojo/mojo_12.jpg' alt='Brad vibin' with PBR' width='400px'/>";
+const bradBikeOptions = {
     'maxWidth': '400',
     'className': 'popup'
 }
 
-L.marker([40.00818339038807, -105.27633844658811], {icon: bradPBR}).bindPopup(bradPBRPopup, bradPBROptions).addTo(map);
+L.marker([40.00818339038807, -105.27633844658811], {icon: bradBike}).bindPopup(bradBikePopup, bradBikeOptions).addTo(map);
 
-//I think Dylan at Sano
-const dylanSano = L.icon({
-    iconUrl: 'img/photos/surf/surf_1.jpg',
-    iconSize: [100, 66.6666]
+//Banjo Russ
+const russBanjo = L.icon({
+    iconUrl: 'img/photos/mojo/mojo_13.jpg',
+    iconSize: [66.6666, 100]
 });
 
-const dylanSanoPopup = "I think this is Dylan shredding<br/> <img src='img/photos/surf/surf_1.jpg' alt='Dylan Surfin' Sano' width='700px'/>";
-const dylanSanoOptions = {
-    'maxWidth': '700',
+const russBanjoPopup = "Russ Shreddin' Banjo<br/> <img src='img/photos/mojo/mojo_13.jpg' alt='Russ Shreddin' Banjo' width='400px'/>";
+const russBanjoOptions = {
+    'maxWidth': '400',
     'className': 'popup'
 }
 
-L.marker([33.371039868012936, -117.5693303023309], {icon: dylanSano}).bindPopup(dylanSanoPopup, dylanSanoOptions).addTo(map);
+L.marker([40.017358755799904, -105.28403441832609], {icon: russBanjo}).bindPopup(russBanjoPopup, russBanjoOptions).addTo(map);
 
 //From the empire
 const empire = L.icon({
